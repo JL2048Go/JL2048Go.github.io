@@ -1,0 +1,28 @@
+# -----------------------------------
+# Site Settings (网站基本信息)
+# -----------------------------------
+title: JL2048
+email: JL2048@example.com
+description: '欢迎来到我的GitHub主页，我是一名安卓开发者。'
+baseurl: "" # 如果不是用户主页，则为 /仓库名
+url: "https://JL2048Go.github.io" # 您的完整域名
+
+# -----------------------------------
+# Theme Settings (主题设置)
+# -----------------------------------
+# 默认使用 Minimal 主题，您可以替换为其他 Jekyll 主题
+remote_theme: pages-themes/minimal@v0.2.0
+
+# -----------------------------------
+# Navigation (导航栏，Minimal主题支持)
+# -----------------------------------
+header_pages:
+  - index.md
+  # - about.md # 如果您有关于页面
+
+# -----------------------------------
+# Build Settings (构建设置)
+# -----------------------------------
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
