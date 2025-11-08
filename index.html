@@ -6,31 +6,52 @@
     <title>祝贺！</title>
     <style>
         body {
-            /* 模拟原图的白色背景 */
-            background-color: #ffffff; 
+            background-color: #ffffff;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 50px 20px;
             color: #000000;
-            /* 使内容在页面中居中显示 */
             display: flex;
             justify-content: center;
         }
         .content-box {
             max-width: 600px;
-            text-align: left; /* 文本左对齐，但整体在页面居中 */
+            text-align: left;
         }
         h1 {
             font-size: 32px;
             font-weight: bold;
             margin-bottom: 30px;
-            border-bottom: 1px solid #ddd; /* 模拟原图标题下的分隔线 */
+            border-bottom: 1px solid #ddd;
             padding-bottom: 10px;
         }
         p {
             font-size: 16px;
             margin-bottom: 20px;
             line-height: 1.6;
+        }
+
+        /* ------------------------------------- */
+        /* 针对 : ) 链接的特殊样式调整 */
+        /* ------------------------------------- */
+        .normal-text-link {
+            /* 移除默认的蓝色链接颜色 */
+            color: inherit; 
+            /* 移除下划线 */
+            text-decoration: none; 
+            
+            font-size: 16px; /* 恢复到普通文本大小 */
+            font-weight: normal; /* 恢复到普通字重 */
+            
+            display: block; /* 确保它独占一行 */
+            margin-top: 20px;
+            text-align: left; /* 保持和上面段落一样的左对齐 */
+        }
+        /* 移除鼠标悬停时的样式变化 */
+        .normal-text-link:hover {
+            opacity: 1;
+            text-decoration: none; 
+            cursor: pointer; /* 保持光标是点击手势，提示用户它是可点击的 */
         }
     </style>
 </head>
@@ -41,8 +62,11 @@
         <p>您已到达因特网的最后一页。祝您网上冲浪愉快。</p>
         
         <p>现在，确实没有什么可浏览的内容了。您可以安全地关闭计算机，然后回到现实生活中。</p>
-
-      <p>: )</p>
+        
+        <p>
+            <a href="home.html" class="normal-text-link">: )</a>
+        </p>
+        
     </div>
 </body>
 </html>
